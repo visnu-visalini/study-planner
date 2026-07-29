@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Study Agent",
+  "version": "1.0",
+
+  "description": "AI Study Assistant",
+
+  "action": {
+    "default_popup": "index.html"
+  },
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ]
+}
