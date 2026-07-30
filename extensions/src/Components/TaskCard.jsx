@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, Circle, ListTodo } from "lucide-react";
+import { completeTaskById } from "../services/api";
 
-function Section({ title, items, done }) {
+function Section({ title, items, done, onRefresh }) {
+    async function handleComplete(id) {
+        await completeTaskById(id);
+        await onRefresh();
+    }
+
     return (
         <div style={{ marginBottom: 16 }}>
             <p style={{ fontSize: 10, fontWeight: 600, color: "#374151", textTransform: "uppercase", letterSpacing: "0.8px", marginBottom: 8 }}>
@@ -21,10 +27,20 @@ function Section({ title, items, done }) {
                             border: "1px solid rgba(255,255,255,0.06)",
                         }}
                     >
-                        {done
-                            ? <CheckCircle2 size={15} color="#22c55e" style={{ flexShrink: 0, marginTop: 1 }} />
-                            : <Circle       size={15} color="#f59e0b" style={{ flexShrink: 0, marginTop: 1 }} />
-                        }
+                        <button
+                            onClick={() => !done && handleComplete(t.id)}
+                            style={{
+                                background: "none", border: "none", padding: 0,
+                                cursor: done ? "default" : "pointer",
+                                flexShrink: 0, marginTop: 1, display: "flex",
+                            }}
+                            title={done ? "" : "Mark complete"}
+                        >
+                            {done
+                                ? <CheckCircle2 size={15} color="#22c55e" />
+                                : <Circle       size={15} color="#f59e0b" />
+                            }
+                        </button>
                         <span style={{
                             fontSize: 12, color: done ? "#4b5563" : "#cbd5e1",
                             textDecoration: done ? "line-through" : "none",
@@ -39,7 +55,7 @@ function Section({ title, items, done }) {
     );
 }
 
-export default function TaskCard({ tasks }) {
+export default function TaskCard({ tasks, onRefresh }) {
     const pending = tasks.filter(t => !t.completed);
     const done    = tasks.filter(t =>  t.completed);
 
@@ -73,8 +89,8 @@ export default function TaskCard({ tasks }) {
                 </p>
             )}
 
-            {pending.length > 0 && <Section title="Pending" items={pending} done={false} />}
-            {done.length    > 0 && <Section title="Completed" items={done}    done={true}  />}
+            {pending.length > 0 && <Section title="Pending"   items={pending} done={false} onRefresh={onRefresh} />}
+            {done.length    > 0 && <Section title="Completed" items={done}    done={true}  onRefresh={onRefresh} />}
         </div>
     );
 }

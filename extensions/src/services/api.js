@@ -1,5 +1,35 @@
 const API_URL = "/api";
 
+export async function callPlanner(message) {
+    try {
+        const res = await fetch(`${API_URL}/planner`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message })
+        });
+        if (!res.ok) throw new Error("Planner Error");
+        return await res.json();
+    } catch (error) {
+        console.error(error);
+        return { reply: "❌ Planner unavailable." };
+    }
+}
+
+export async function callTutor(message) {
+    try {
+        const res = await fetch(`${API_URL}/tutor`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message })
+        });
+        if (!res.ok) throw new Error("Tutor Error");
+        return await res.json();
+    } catch (error) {
+        console.error(error);
+        return { reply: "❌ Tutor unavailable." };
+    }
+}
+
 export async function askAI(message) {
     try {
         const res = await fetch(`${API_URL}/orchestrator`, {
@@ -15,9 +45,13 @@ export async function askAI(message) {
     }
 }
 
-export async function fetchTasks() {
+export async function completeTaskById(id) {
     try {
-        const res = await fetch(`${API_URL}/tracker`);
+        const res = await fetch(`${API_URL}/executor`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ id })
+        });
         if (!res.ok) throw new Error();
         return await res.json();
     } catch {
@@ -25,7 +59,7 @@ export async function fetchTasks() {
     }
 }
 
-export async function fetchProgress() {
+export async function fetchTasks() {
     try {
         const res = await fetch(`${API_URL}/tracker`);
         if (!res.ok) throw new Error();

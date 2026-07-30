@@ -1,28 +1,28 @@
 import { motion } from "framer-motion";
 import { CalendarDays, BarChart2, CheckSquare, Music, FileText, CalendarClock } from "lucide-react";
 
-const ACTIONS = [
-    { label: "Plan Today",  Icon: CalendarDays,  prompt: "Create a study plan for today",                                              color: "#6366f1" },
-    { label: "Progress",    Icon: BarChart2,      prompt: "Show my progress and focus stats",                                          color: "#8b5cf6" },
-    { label: "My Tasks",    Icon: CheckSquare,    prompt: "Show all my tasks",                                                         color: "#06b6d4" },
-    { label: "Spotify",     Icon: Music,          prompt: "Play a lo-fi study playlist on Spotify",                                    color: "#22c55e" },
-    { label: "Save Note",   Icon: FileText,       prompt: "Save a study session summary note to Notion",                              color: "#f59e0b" },
-    { label: "Schedule",    Icon: CalendarClock,  prompt: "Add a 2-hour study session to Google Calendar for tomorrow at 10am",       color: "#ec4899" },
-];
+export default function QuickActions({ askAI, onPlan, loading }) {
+    const ACTIONS = [
+        { label: "Plan Today",  Icon: CalendarDays,  color: "#6366f1", handler: () => onPlan("Create a detailed study plan for today based on my tasks") },
+        { label: "Progress",    Icon: BarChart2,      color: "#8b5cf6", handler: () => askAI("Show my progress and focus stats") },
+        { label: "My Tasks",    Icon: CheckSquare,    color: "#06b6d4", handler: () => askAI("Show all my tasks") },
+        { label: "Spotify",     Icon: Music,          color: "#22c55e", handler: () => askAI("Play a lo-fi study playlist on Spotify") },
+        { label: "Save Note",   Icon: FileText,       color: "#f59e0b", handler: () => askAI("Save a study session summary note to Notion") },
+        { label: "Schedule",    Icon: CalendarClock,  color: "#ec4899", handler: () => askAI("Add a 2-hour study session to Google Calendar for tomorrow at 10am") },
+    ];
 
-export default function QuickActions({ askAI, loading }) {
     return (
         <div style={{ padding: "10px 12px 0", flexShrink: 0 }}>
             <p style={{ fontSize: 10, fontWeight: 600, color: "#374151", textTransform: "uppercase", letterSpacing: "0.8px", marginBottom: 8 }}>
                 Quick Actions
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 6 }}>
-                {ACTIONS.map(({ label, Icon, prompt, color }, i) => (
+                {ACTIONS.map(({ label, Icon, color, handler }, i) => (
                     <motion.button
                         key={i}
                         whileHover={{ scale: 1.03, y: -1 }}
                         whileTap={{ scale: 0.97 }}
-                        onClick={() => askAI(prompt)}
+                        onClick={() => handler()}
                         disabled={loading}
                         style={{
                             display: "flex", flexDirection: "column", alignItems: "center",

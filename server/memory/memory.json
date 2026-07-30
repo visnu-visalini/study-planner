@@ -31,94 +31,6 @@
   "conversation": [
     {
       "role": "user",
-      "content": "Create a study plan for today"
-    },
-    {
-      "role": "assistant",
-      "content": "To create your study plan for today, especially for Civil Engineering, could you please tell me how many hours you want to study and any specific topics within Civil Engineering you want to focus on? This will help me structure your plan."
-    },
-    {
-      "role": "user",
-      "content": "5"
-    },
-    {
-      "role": "assistant",
-      "content": "{\n  \"id\": 1785386861915,\n  \"task\": \"Study Civil Engineering - Session 1\",\n  \"completed\": false,\n  \"created\": \"2026-07-30T04:47:41.915Z\"\n}"
-    },
-    {
-      "role": "user",
-      "content": "visnu visalini k k"
-    },
-    {
-      "role": "assistant",
-      "content": "Could you please clarify what you mean by \"visnu visalini k k\"? Are you referring to names, a task, or something else? I'll be happy to assist once I understand better."
-    },
-    {
-      "role": "user",
-      "content": "names"
-    },
-    {
-      "role": "assistant",
-      "content": "Noted the names \"Visnu\" and \"Visalini K K.\" How can I assist you with these names? Do you want to create a task, note, or something else related to them?"
-    },
-    {
-      "role": "user",
-      "content": "no can u search for that name"
-    },
-    {
-      "role": "assistant",
-      "content": "I don't have the capability to search the internet for specific names or personal information. If you want, I can help you organize information or create notes related to these names. Let me know how you'd like to proceed!"
-    },
-    {
-      "role": "user",
-      "content": "whats ur model name"
-    },
-    {
-      "role": "assistant",
-      "content": "I am an AI Study Planner assistant designed to help you manage your study tasks, focus sessions, notes, and productivity. I don't have a specific model name like typical AI models, but I'm here to assist you efficiently. How can I help you today?"
-    },
-    {
-      "role": "user",
-      "content": "are u from google"
-    },
-    {
-      "role": "assistant",
-      "content": "No, I am not from Google. I am an AI Study Planner assistant designed to help you manage your study tasks and productivity. How can I assist you today?"
-    },
-    {
-      "role": "user",
-      "content": "then openai?"
-    },
-    {
-      "role": "assistant",
-      "content": "Yes, I am created using OpenAI's technology to assist you with study planning, task management, and productivity. How can I help you today?"
-    },
-    {
-      "role": "user",
-      "content": "whats ur model from openai"
-    },
-    {
-      "role": "assistant",
-      "content": "I am based on OpenAI's GPT-4 architecture. I'm designed specifically to help you with study planning, managing tasks, focus sessions, notes, and productivity. How can I assist you with your studies today?"
-    },
-    {
-      "role": "user",
-      "content": "i feel boring today"
-    },
-    {
-      "role": "assistant",
-      "content": "I'm here to help you stay productive even when you're feeling bored! Would you like me to suggest a short, engaging study session or some fun learning activities? Or maybe take a break with some relaxing music? Let me know what you'd prefer!"
-    },
-    {
-      "role": "user",
-      "content": "can u suggest me some motivating songs"
-    },
-    {
-      "role": "assistant",
-      "content": "Sure! I can play a motivating playlist for you on Spotify. Would you like me to start a \"Motivational\" or \"Energy Boost\" playlist?"
-    },
-    {
-      "role": "user",
       "content": "yess"
     },
     {
@@ -188,6 +100,94 @@
     {
       "role": "assistant",
       "content": "I currently don't have access to your Google Calendar to add events. If you want, I can help you draft the event details so you can add it manually, or assist with creating a study task and reminders here. How would you like to proceed?"
+    },
+    {
+      "role": "user",
+      "content": "heyy"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! How can I assist you with your study plans or productivity today?"
+    },
+    {
+      "role": "user",
+      "content": "plan today"
+    },
+    {
+      "role": "assistant",
+      "content": "To create a study plan for today, could you please tell me:\n1. How many hours do you want to study today?\n2. Which subjects or topics do you want to focus on?\n3. Any specific goals or tasks to complete today?"
+    },
+    {
+      "role": "user",
+      "content": "kumaraguru"
+    },
+    {
+      "role": "assistant",
+      "content": "Are you referring to Kumaraguru as a subject, topic, or institution for your study plan? Please provide a bit more detail so I can help you create an effective study plan for today."
+    },
+    {
+      "role": "user",
+      "content": "institution"
+    },
+    {
+      "role": "assistant",
+      "content": "Got it! Kumaraguru is an educational institution. Would you like me to help you create a study plan today focusing on courses or subjects related to Kumaraguru? If yes, please share the subjects or topics you want to study, and how much time you'd like to dedicate today."
+    },
+    {
+      "role": "user",
+      "content": "coimbatore?"
+    },
+    {
+      "role": "assistant",
+      "content": "Coimbatore is a major city in the Indian state of Tamil Nadu, known for its educational institutions, industries, and pleasant climate. Are you asking about study options in Coimbatore, or do you want to include Coimbatore-related topics in your study plan? Please let me know how I can assist you!"
+    },
+    {
+      "role": "user",
+      "content": "aura 10/10"
+    },
+    {
+      "role": "assistant",
+      "content": "Could you please clarify what you mean by \"aura 10/10\"? Are you referring to a rating, a product, a concept, or something else? That way, I can assist you better."
+    },
+    {
+      "role": "user",
+      "content": "song"
+    },
+    {
+      "role": "assistant",
+      "content": "Got it! You’re referring to the song \"Aura 10/10.\" I can't play songs directly here, but I can help you find a playlist or guide you on how to listen to it on platforms like Spotify or YouTube. Would you like me to suggest similar songs or help you create a study playlist with that vibe?"
+    },
+    {
+      "role": "user",
+      "content": "give details of the song"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have specific details about a song titled \"Aura 10/10\" in my database. It might be a less common or new release. Could you provide more information like the artist's name or lyrics? That would help me find the exact details for you."
+    },
+    {
+      "role": "user",
+      "content": "rowdy baby song"
+    },
+    {
+      "role": "assistant",
+      "content": "\"Rowdy Baby\" is a popular Tamil song from the 2018 movie \"Maari 2.\" The song features vocals by Dhanush and Dhee, with music composed by Yuvan Shankar Raja. It became widely popular for its catchy tune and energetic choreography by Dhanush and Sai Pallavi in the music video.\n\nIf you'd like, I can help you find ways to listen to it or add it to a study playlist with similar energetic songs. Would you want that?"
+    },
+    {
+      "role": "user",
+      "content": "add to playlist"
+    },
+    {
+      "role": "assistant",
+      "content": "I can help you add \"Rowdy Baby\" to a study playlist on Spotify. However, currently, I can only play playlists by searching their names rather than adding individual songs to a playlist.\n\nWould you like me to play a playlist that includes \"Rowdy Baby\" or similar energetic Tamil hits?"
+    },
+    {
+      "role": "user",
+      "content": "Play a lo-fi study playlist on Spotify"
+    },
+    {
+      "role": "assistant",
+      "content": "❌ Spotify search failed. Check your access token."
     }
   ]
 }

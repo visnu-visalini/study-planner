@@ -8,7 +8,7 @@ import ProgressCard from "./Components/ProgressCard";
 import TaskCard from "./Components/TaskCard";
 import FocusTimer from "./Components/FocusTimer";
 import PlannerCard from "./Components/PlannerCard";
-import { askAI, fetchTasks } from "./services/api";
+import { askAI, fetchTasks, callPlanner, callTutor } from "./services/api";
 
 const TABS = [
     { id: "Chat",     label: "Chat",     Icon: MessageSquare },
@@ -58,6 +58,18 @@ export default function App() {
             const data = await askAI(message);
             setMessages(prev => [...prev, { role: "assistant", content: data.reply ?? "❌ No response." }]);
             await loadData();
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    async function handlePlanner(message) {
+        if (tab !== "Chat") setTab("Chat");
+        setMessages(prev => [...prev, { role: "user", content: message }]);
+        setLoading(true);
+        try {
+            const data = await callPlanner(message);
+            setMessages(prev => [...prev, { role: "assistant", content: data.reply ?? "❌ No response." }]);
         } finally {
             setLoading(false);
         }
@@ -125,13 +137,13 @@ export default function App() {
                     >
                         {tab === "Chat" && (
                             <div style={{ display: "flex", flexDirection: "column", height: "100%", overflow: "hidden" }}>
-                                <QuickActions askAI={handleAI} loading={loading} />
+                                <QuickActions askAI={handleAI} onPlan={handlePlanner} loading={loading} />
                                 <ChatBox messages={messages} askAI={handleAI} loading={loading} />
                             </div>
                         )}
                         {tab === "Tasks" && (
                             <div style={{ flex: 1, overflowY: "auto", padding: "12px 12px 0" }}>
-                                <TaskCard tasks={tasks} />
+                                <TaskCard tasks={tasks} onRefresh={loadData} />
                                 <PlannerCard sessions={stats.focusSessions} />
                             </div>
                         )}
