@@ -10,6 +10,15 @@ import FocusTimer from "./Components/FocusTimer";
 import PlannerCard from "./Components/PlannerCard";
 import { askAI, fetchTasks, callPlanner, callTutor } from "./services/api";
 
+
+
+import {
+    connectSpotify,
+    playMusic,
+    pauseMusic,
+    getCurrentSong
+} from "./services/SpotifyService";
+
 const TABS = [
     { id: "Chat",     label: "Chat",     Icon: MessageSquare },
     { id: "Tasks",    label: "Tasks",    Icon: CheckSquare   },

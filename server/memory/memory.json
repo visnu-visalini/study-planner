@@ -31,118 +31,6 @@
   "conversation": [
     {
       "role": "user",
-      "content": "yess"
-    },
-    {
-      "role": "assistant",
-      "content": "❌ Spotify search failed. Check your access token."
-    },
-    {
-      "role": "user",
-      "content": "columbu"
-    },
-    {
-      "role": "assistant",
-      "content": "Could you please clarify what you mean by \"columbu\"? Are you referring to a place, a name, or something else? I'll be happy to assist once I understand better."
-    },
-    {
-      "role": "user",
-      "content": "place"
-    },
-    {
-      "role": "assistant",
-      "content": "Columbu seems like it might be a typo or variation of \"Colombo,\" which is the capital city of Sri Lanka. Is that what you meant? Let me know if you want information about Colombo or another place!"
-    },
-    {
-      "role": "user",
-      "content": "jaffna"
-    },
-    {
-      "role": "assistant",
-      "content": "Jaffna is a city in the Northern Province of Sri Lanka. It is known for its rich cultural heritage, historic sites, and beautiful temples. If you want, I can help you with information or plan studies related to geography, history, or culture of Jaffna. How can I assist you further?"
-    },
-    {
-      "role": "user",
-      "content": "Play a lo-fi study playlist on Spotify"
-    },
-    {
-      "role": "assistant",
-      "content": "❌ Spotify search failed. Check your access token."
-    },
-    {
-      "role": "user",
-      "content": "Add a 2-hour study session to Google Calendar for tomorrow at 10am"
-    },
-    {
-      "role": "assistant",
-      "content": "❌ Calendar error: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project."
-    },
-    {
-      "role": "user",
-      "content": "Create a study plan for today"
-    },
-    {
-      "role": "assistant",
-      "content": "You mentioned earlier you want to study for 5 hours today. Would you like to focus primarily on Civil Engineering topics, or would you like to include other subjects as well in your study plan? Please specify any particular topics or priorities."
-    },
-    {
-      "role": "user",
-      "content": "Show my progress and focus stats"
-    },
-    {
-      "role": "assistant",
-      "content": "{\n  \"total\": 2,\n  \"completed\": 0,\n  \"pending\": 2,\n  \"percentage\": 0\n}\n\nNo focus sessions recorded yet."
-    },
-    {
-      "role": "user",
-      "content": "Add a 2-hour study session to Google Calendar for tomorrow at 10am"
-    },
-    {
-      "role": "assistant",
-      "content": "I currently don't have access to your Google Calendar to add events. If you want, I can help you draft the event details so you can add it manually, or assist with creating a study task and reminders here. How would you like to proceed?"
-    },
-    {
-      "role": "user",
-      "content": "heyy"
-    },
-    {
-      "role": "assistant",
-      "content": "Hey! How can I assist you with your study plans or productivity today?"
-    },
-    {
-      "role": "user",
-      "content": "plan today"
-    },
-    {
-      "role": "assistant",
-      "content": "To create a study plan for today, could you please tell me:\n1. How many hours do you want to study today?\n2. Which subjects or topics do you want to focus on?\n3. Any specific goals or tasks to complete today?"
-    },
-    {
-      "role": "user",
-      "content": "kumaraguru"
-    },
-    {
-      "role": "assistant",
-      "content": "Are you referring to Kumaraguru as a subject, topic, or institution for your study plan? Please provide a bit more detail so I can help you create an effective study plan for today."
-    },
-    {
-      "role": "user",
-      "content": "institution"
-    },
-    {
-      "role": "assistant",
-      "content": "Got it! Kumaraguru is an educational institution. Would you like me to help you create a study plan today focusing on courses or subjects related to Kumaraguru? If yes, please share the subjects or topics you want to study, and how much time you'd like to dedicate today."
-    },
-    {
-      "role": "user",
-      "content": "coimbatore?"
-    },
-    {
-      "role": "assistant",
-      "content": "Coimbatore is a major city in the Indian state of Tamil Nadu, known for its educational institutions, industries, and pleasant climate. Are you asking about study options in Coimbatore, or do you want to include Coimbatore-related topics in your study plan? Please let me know how I can assist you!"
-    },
-    {
-      "role": "user",
       "content": "aura 10/10"
     },
     {
@@ -188,6 +76,118 @@
     {
       "role": "assistant",
       "content": "❌ Spotify search failed. Check your access token."
+    },
+    {
+      "role": "user",
+      "content": "heyy"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! How can I assist you with your studying or productivity today?"
+    },
+    {
+      "role": "user",
+      "content": "Show my progress and focus stats"
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"total\": 2,\n  \"completed\": 0,\n  \"pending\": 2,\n  \"percentage\": 0\n}\n\nNo focus sessions recorded yet."
+    },
+    {
+      "role": "user",
+      "content": "Show all my tasks"
+    },
+    {
+      "role": "assistant",
+      "content": "[\n  {\n    \"id\": 1785303184927,\n    \"task\": \"Study Introduction to DBMS and Database Models\",\n    \"completed\": false,\n    \"created\": \"2026-07-29T05:33:04.927Z\"\n  },\n  {\n    \"id\": 1785303362285,\n    \"task\": \"Study Operating System Basics and Concepts\",\n    \"completed\": false,\n    \"created\": \"2026-07-29T05:36:02.285Z\"\n  }\n]"
+    },
+    {
+      "role": "user",
+      "content": "Play a lo-fi study playlist on Spotify"
+    },
+    {
+      "role": "assistant",
+      "content": "I am unable to play Spotify playlists at the moment. Is there anything else I can assist you with regarding your study plan or tasks?"
+    },
+    {
+      "role": "user",
+      "content": "Save a study session summary note to Notion"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide the title and content of the study session summary note you'd like to save to Notion."
+    },
+    {
+      "role": "user",
+      "content": "cloud computing with aws"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide the content or details of the study session summary about \"Cloud Computing with AWS\" that you'd like me to save to Notion."
+    },
+    {
+      "role": "user",
+      "content": "retyghjkl.rtyuiok;l'"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like your message might be a typo. Could you please provide the content you'd like to save for the \"Cloud Computing with AWS\" study session summary?"
+    },
+    {
+      "role": "user",
+      "content": "azure,aws fundamentals"
+    },
+    {
+      "role": "assistant",
+      "content": "❌ Notion error: body failed validation. Fix one:\nbody.parent.page_id should be defined, instead was `undefined`.\nbody.parent.database_id should be a valid uuid, instead was `\"your_notion_database_id\"`.\nbody.parent.data_source_id should be defined, instead was `undefined`.\nbody.parent.workspace should be defined, instead was `undefined`."
+    },
+    {
+      "role": "user",
+      "content": "hey play spotify perfect from ed sheeran"
+    },
+    {
+      "role": "assistant",
+      "content": "❌ Spotify not configured. Add SPOTIFY_ACCESS_TOKEN to .env"
+    },
+    {
+      "role": "user",
+      "content": "hey play perfect by ed sheeran"
+    },
+    {
+      "role": "assistant",
+      "content": "I can't play Spotify songs directly, but I can help you find the \"Perfect\" song by Ed Sheeran on Spotify or suggest a playlist featuring it. Would you like me to do that?"
+    },
+    {
+      "role": "user",
+      "content": "Show my progress and focus stats"
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"total\": 2,\n  \"completed\": 0,\n  \"pending\": 2,\n  \"percentage\": 0\n}\n\nNo focus sessions recorded yet."
+    },
+    {
+      "role": "user",
+      "content": "Show all my tasks"
+    },
+    {
+      "role": "assistant",
+      "content": "Here are your current study tasks:\n1. Study Introduction to DBMS and Database Models (pending)\n2. Study Operating System Basics and Concepts (pending)\n\nLet me know if you'd like to mark any as completed or add new tasks!"
+    },
+    {
+      "role": "user",
+      "content": "Save a study session summary note to Notion"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide the title and content of the study session summary note you'd like to save to Notion."
+    },
+    {
+      "role": "user",
+      "content": "Add a 2-hour study session to Google Calendar for tomorrow at 10am"
+    },
+    {
+      "role": "assistant",
+      "content": "❌ Calendar error: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project."
     }
   ]
 }

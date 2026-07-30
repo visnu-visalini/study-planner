@@ -1,12 +1,18 @@
 import { motion } from "framer-motion";
 import { CalendarDays, BarChart2, CheckSquare, Music, FileText, CalendarClock } from "lucide-react";
+import { connectSpotify } from "../services/SpotifyService";
 
 export default function QuickActions({ askAI, onPlan, loading }) {
     const ACTIONS = [
         { label: "Plan Today",  Icon: CalendarDays,  color: "#6366f1", handler: () => onPlan("Create a detailed study plan for today based on my tasks") },
         { label: "Progress",    Icon: BarChart2,      color: "#8b5cf6", handler: () => askAI("Show my progress and focus stats") },
         { label: "My Tasks",    Icon: CheckSquare,    color: "#06b6d4", handler: () => askAI("Show all my tasks") },
-        { label: "Spotify",     Icon: Music,          color: "#22c55e", handler: () => askAI("Play a lo-fi study playlist on Spotify") },
+         {
+    label: "Spotify",
+    Icon: Music,
+    color: "#22c55e",
+    handler: () => connectSpotify()
+},
         { label: "Save Note",   Icon: FileText,       color: "#f59e0b", handler: () => askAI("Save a study session summary note to Notion") },
         { label: "Schedule",    Icon: CalendarClock,  color: "#ec4899", handler: () => askAI("Add a 2-hour study session to Google Calendar for tomorrow at 10am") },
     ];
