@@ -1,0 +1,5 @@
+/* Injected into host page — only affects our injected elements */
+#study-planner-toggle:hover {
+    background: #4f46e5 !important;
+    transform: scale(1.08);
+}

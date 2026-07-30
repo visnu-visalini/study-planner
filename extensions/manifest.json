@@ -1,21 +1,35 @@
 {
   "manifest_version": 3,
-  "name": "Study Agent",
+  "name": "Study Planner AI",
   "version": "1.0",
-
-  "description": "AI Study Assistant",
+  "description": "AI Study Assistant — sidebar panel",
 
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "public/popup.html",
+    "default_icon": {
+      "16": "icons.svg",
+      "48": "icons.svg",
+      "128": "icons.svg"
+    }
   },
 
-  "permissions": [
-    "storage",
-    "activeTab",
-    "tabs"
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["sidebar.css"],
+      "run_at": "document_end"
+    }
   ],
 
-  "host_permissions": [
-    "http://localhost:5000/*"
-  ]
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*", "sidebar.html", "sidebar.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "permissions": ["storage", "activeTab", "tabs"],
+
+  "host_permissions": ["http://localhost:5000/*"]
 }
