@@ -31,83 +31,11 @@
   "conversation": [
     {
       "role": "user",
-      "content": "aura 10/10"
+      "content": "Add a 2-hour study session to Google Calendar for tomorrow at 10am"
     },
     {
       "role": "assistant",
-      "content": "Could you please clarify what you mean by \"aura 10/10\"? Are you referring to a rating, a product, a concept, or something else? That way, I can assist you better."
-    },
-    {
-      "role": "user",
-      "content": "song"
-    },
-    {
-      "role": "assistant",
-      "content": "Got it! You’re referring to the song \"Aura 10/10.\" I can't play songs directly here, but I can help you find a playlist or guide you on how to listen to it on platforms like Spotify or YouTube. Would you like me to suggest similar songs or help you create a study playlist with that vibe?"
-    },
-    {
-      "role": "user",
-      "content": "give details of the song"
-    },
-    {
-      "role": "assistant",
-      "content": "I don't have specific details about a song titled \"Aura 10/10\" in my database. It might be a less common or new release. Could you provide more information like the artist's name or lyrics? That would help me find the exact details for you."
-    },
-    {
-      "role": "user",
-      "content": "rowdy baby song"
-    },
-    {
-      "role": "assistant",
-      "content": "\"Rowdy Baby\" is a popular Tamil song from the 2018 movie \"Maari 2.\" The song features vocals by Dhanush and Dhee, with music composed by Yuvan Shankar Raja. It became widely popular for its catchy tune and energetic choreography by Dhanush and Sai Pallavi in the music video.\n\nIf you'd like, I can help you find ways to listen to it or add it to a study playlist with similar energetic songs. Would you want that?"
-    },
-    {
-      "role": "user",
-      "content": "add to playlist"
-    },
-    {
-      "role": "assistant",
-      "content": "I can help you add \"Rowdy Baby\" to a study playlist on Spotify. However, currently, I can only play playlists by searching their names rather than adding individual songs to a playlist.\n\nWould you like me to play a playlist that includes \"Rowdy Baby\" or similar energetic Tamil hits?"
-    },
-    {
-      "role": "user",
-      "content": "Play a lo-fi study playlist on Spotify"
-    },
-    {
-      "role": "assistant",
-      "content": "❌ Spotify search failed. Check your access token."
-    },
-    {
-      "role": "user",
-      "content": "heyy"
-    },
-    {
-      "role": "assistant",
-      "content": "Hey! How can I assist you with your studying or productivity today?"
-    },
-    {
-      "role": "user",
-      "content": "Show my progress and focus stats"
-    },
-    {
-      "role": "assistant",
-      "content": "{\n  \"total\": 2,\n  \"completed\": 0,\n  \"pending\": 2,\n  \"percentage\": 0\n}\n\nNo focus sessions recorded yet."
-    },
-    {
-      "role": "user",
-      "content": "Show all my tasks"
-    },
-    {
-      "role": "assistant",
-      "content": "[\n  {\n    \"id\": 1785303184927,\n    \"task\": \"Study Introduction to DBMS and Database Models\",\n    \"completed\": false,\n    \"created\": \"2026-07-29T05:33:04.927Z\"\n  },\n  {\n    \"id\": 1785303362285,\n    \"task\": \"Study Operating System Basics and Concepts\",\n    \"completed\": false,\n    \"created\": \"2026-07-29T05:36:02.285Z\"\n  }\n]"
-    },
-    {
-      "role": "user",
-      "content": "Play a lo-fi study playlist on Spotify"
-    },
-    {
-      "role": "assistant",
-      "content": "I am unable to play Spotify playlists at the moment. Is there anything else I can assist you with regarding your study plan or tasks?"
+      "content": "❌ Calendar error: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project."
     },
     {
       "role": "user",
@@ -119,43 +47,19 @@
     },
     {
       "role": "user",
-      "content": "cloud computing with aws"
+      "content": "what is orchaestration"
     },
     {
       "role": "assistant",
-      "content": "Please provide the content or details of the study session summary about \"Cloud Computing with AWS\" that you'd like me to save to Notion."
+      "content": "Orchestration refers to the automated coordination, management, and arrangement of complex computer systems, software, or services. In the context of cloud computing and IT, it often means automating the deployment, scaling, and operations of applications and infrastructure components to ensure they work together seamlessly. For example, container orchestration tools like Kubernetes automate the deployment and management of containerized applications. Would you like me to help you create a study task or note about orchestration?"
     },
     {
       "role": "user",
-      "content": "retyghjkl.rtyuiok;l'"
+      "content": "agentic ai"
     },
     {
       "role": "assistant",
-      "content": "It looks like your message might be a typo. Could you please provide the content you'd like to save for the \"Cloud Computing with AWS\" study session summary?"
-    },
-    {
-      "role": "user",
-      "content": "azure,aws fundamentals"
-    },
-    {
-      "role": "assistant",
-      "content": "❌ Notion error: body failed validation. Fix one:\nbody.parent.page_id should be defined, instead was `undefined`.\nbody.parent.database_id should be a valid uuid, instead was `\"your_notion_database_id\"`.\nbody.parent.data_source_id should be defined, instead was `undefined`.\nbody.parent.workspace should be defined, instead was `undefined`."
-    },
-    {
-      "role": "user",
-      "content": "hey play spotify perfect from ed sheeran"
-    },
-    {
-      "role": "assistant",
-      "content": "❌ Spotify not configured. Add SPOTIFY_ACCESS_TOKEN to .env"
-    },
-    {
-      "role": "user",
-      "content": "hey play perfect by ed sheeran"
-    },
-    {
-      "role": "assistant",
-      "content": "I can't play Spotify songs directly, but I can help you find the \"Perfect\" song by Ed Sheeran on Spotify or suggest a playlist featuring it. Would you like me to do that?"
+      "content": "Agentic AI refers to artificial intelligence systems that possess or simulate agency—that is, the capacity to act autonomously and make decisions to achieve goals. These AI systems can perceive their environment, reason about it, and take purposeful actions without constant human guidance. Agentic AI is often discussed in the context of advanced AI that can perform complex tasks, adapt, and learn in dynamic settings.\n\nWould you like me to help you create a study task or note about agentic AI?"
     },
     {
       "role": "user",
@@ -187,7 +91,103 @@
     },
     {
       "role": "assistant",
-      "content": "❌ Calendar error: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project."
+      "content": "Could you please provide the title for the 2-hour study session you'd like to add to Google Calendar tomorrow at 10am?"
+    },
+    {
+      "role": "user",
+      "content": "Start focus session for dsa"
+    },
+    {
+      "role": "assistant",
+      "content": "⏱️ Focus session started for \"dsa\". Good luck!"
+    },
+    {
+      "role": "user",
+      "content": "doubt clearance\nagenti ai"
+    },
+    {
+      "role": "assistant",
+      "content": "Would you like to create a study task for \"doubt clearance on agentic AI\" or add notes about it? Please specify how you'd like me to assist with this topic."
+    },
+    {
+      "role": "user",
+      "content": "what is hallucination"
+    },
+    {
+      "role": "assistant",
+      "content": "In the context of AI and machine learning, \"hallucination\" refers to a situation where an AI model, especially language models, generates false or fabricated information that seems plausible but is incorrect or nonsensical. This occurs because the model predicts text based on patterns in the training data but doesn't truly understand the content, leading to confident but inaccurate outputs. \n\nWould you like me to help you save this explanation as a study note or create a task related to hallucination?"
+    },
+    {
+      "role": "user",
+      "content": "`what is agentic ai"
+    },
+    {
+      "role": "assistant",
+      "content": "Agentic AI refers to artificial intelligence systems that have the capability to act autonomously and make decisions to achieve specific goals. These systems can perceive their environment, evaluate situations, plan actions, and execute tasks without human intervention. Essentially, agentic AI demonstrates a level of agency, meaning it can perform actions on its own behalf to fulfill objectives. This concept is important in developing AI that can operate independently in complex, dynamic environments.\n\nWould you like me to save this explanation as a study note or create a related task for you?"
+    },
+    {
+      "role": "user",
+      "content": "Show my progress and focus stats"
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"total\": 2,\n  \"completed\": 0,\n  \"pending\": 2,\n  \"percentage\": 0\n}\n\nNo focus sessions recorded yet."
+    },
+    {
+      "role": "user",
+      "content": "Add a 2-hour study session to Google Calendar for tomorrow at 10am"
+    },
+    {
+      "role": "assistant",
+      "content": "Could you please provide the title for the 2-hour study session you'd like to schedule tomorrow at 10am on Google Calendar?"
+    },
+    {
+      "role": "user",
+      "content": "Show all my tasks"
+    },
+    {
+      "role": "assistant",
+      "content": "Your current study tasks are:\n1. Study Introduction to DBMS and Database Models (pending)\n2. Study Operating System Basics and Concepts (pending)\n\nLet me know if you'd like to update or add any tasks!"
+    },
+    {
+      "role": "user",
+      "content": "Save a study session summary note to Notion"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide the title and content for the study session summary note you'd like to save to Notion."
+    },
+    {
+      "role": "user",
+      "content": "explain rag pipeline"
+    },
+    {
+      "role": "assistant",
+      "content": "RAG pipeline stands for Retrieval-Augmented Generation pipeline. It is a method in natural language processing that combines retrieval-based techniques and generative models to improve the accuracy and relevance of the generated responses or content. \n\nHere's how it works:\n1. Retrieval: When given a query or prompt, the system first retrieves relevant documents or pieces of information from a large external knowledge base or dataset.\n2. Augmentation: The retrieved information is then used to condition or guide the generative model.\n3. Generation: The generative model creates a response based on both the input query and the retrieved information, resulting in more informed and contextually accurate outputs.\n\nRAG pipelines are useful in scenarios where the model needs to provide detailed and factual answers, such as question answering, summarization, or information synthesis.\n\nWould you like me to create a study task or save this explanation as a note?"
+    },
+    {
+      "role": "user",
+      "content": "play aura 10/10"
+    },
+    {
+      "role": "assistant",
+      "content": "❌ Spotify not configured. Add SPOTIFY_ACCESS_TOKEN to .env"
+    },
+    {
+      "role": "user",
+      "content": "set alarm at 9 pm today"
+    },
+    {
+      "role": "assistant",
+      "content": "I can't set alarms directly. However, I can help you schedule a study session or reminder in your calendar if you want. Would you like me to add a calendar event for 9 pm today?"
+    },
+    {
+      "role": "user",
+      "content": "set task os study time at 7 pm"
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"id\": 1785409602329,\n  \"task\": \"OS study time at 7 pm\",\n  \"completed\": false,\n  \"created\": \"2026-07-30T11:06:42.329Z\"\n}"
     }
   ]
 }
